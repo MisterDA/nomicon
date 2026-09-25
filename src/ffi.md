@@ -658,7 +658,7 @@ against `libc` and `libm` by default.
 In C, functions can be 'variadic', meaning they accept a variable number of arguments. This can
 be achieved in Rust by specifying `...` within the argument list of a foreign function declaration:
 
-```no_run
+```rust,no_run
 unsafe extern "C" {
     fn foo(x: i32, ...);
 }
